@@ -11,3 +11,4 @@ case $(uname) in
 esac
 
 source .bash_prompt
+source .aliases
