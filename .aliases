@@ -1,0 +1,17 @@
+# Terraform
+alias tf="terraform"
+alias tfi="terraform init"
+alias tfp="terraform plan"
+alias tfa="terraform apply"
+
+# Git Aliases
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit"
+alias gp="git push"
+alias gsho="git push origin"
+alias gllo="git pull origin"
+alias gpgb="git push gitbook"
+alias gco="git checkout"
+alias gb="git branch"
+alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
