@@ -1,4 +1,4 @@
-les=~/.dotfiles
+dotfiles=~/.dotfiles
 
 BASH_FILES := $(shell cd $(dotfiles)/bash; ls)
 # GIT_FILES := $(shell cd $(dotfiles)/git; ls)
