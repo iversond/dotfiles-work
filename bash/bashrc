@@ -11,7 +11,7 @@ case $(uname) in
 esac
 
 # OCI
-#
+
 if [ $is_oci_shell ]; then
   source /etc/bashrc.cloudshell
   export TZ="/usr/share/zoneinfo/America/Chicago"
@@ -24,3 +24,7 @@ fi
 
 source ~/.bash_prompt
 source ~/.aliases
+
+# PeopleSoft
+
+export PATH=$PATH:/opt/puppetlabs/puppet/bin
