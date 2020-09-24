@@ -1,14 +1,4 @@
-# OCI
-#
-if [ $is_oci_shell ]; then
-  source /etc/bashrc.cloudshell
-  export TZ="/usr/share/zoneinfo/America/Chicago"
-  export TF_VAR_tenancy_ocid=$OCI_CLI_TENANCY
-  #OCI_CLI_PROFILE
-  export SHELL_HOST_NAME=':cloud: shell ($OCI_CLI_PROFILE)'
-else
-  export SHELL_HOST_NAME='\h'
-fi
+#! /bin/usr/env bash
 
 if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors

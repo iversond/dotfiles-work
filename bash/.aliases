@@ -1,3 +1,11 @@
+alias ll="ls -l"
+alias la='ls -la'
+alias q="exit"
+alias cd.="cd .."
+alias cd..="cd ../.."
+alias cd...="cd ../../.."
+alias dfg="df -BG"
+
 # Terraform
 alias tf="terraform"
 alias tfi="terraform init"
@@ -15,3 +23,5 @@ alias gpgb="git push gitbook"
 alias gco="git checkout"
 alias gb="git branch"
 alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+
+# PeopleSoft
