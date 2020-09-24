@@ -5,9 +5,8 @@ BASH_FILES := $(shell cd $(dotfiles)/bash; ls)
 
 all: help
 
-link: link-bash   ## Link all dotfiles to their respective locations
-			# link-git link-vim 
-			
+link: link-bash   ## Link all dotfiles to their respective locations # link-git link-vim 
+
 # link-vim:
 #         @cd ~ && ln -nfs $(dotfiles)/vim/ .vim; \
 #                                 ln -nfs $(dotfiles)/vim/vimrc .vimrc; \

@@ -17,7 +17,7 @@ if [ $is_oci_shell ]; then
   export TZ="/usr/share/zoneinfo/America/Chicago"
   export TF_VAR_tenancy_ocid=$OCI_CLI_TENANCY
   #OCI_CLI_PROFILE
-  export SHELL_HOST_NAME=':cloud:shell ($OCI_CLI_PROFILE)'
+  export SHELL_HOST_NAME='($OCI_CLI_PROFILE)'
 else
   export SHELL_HOST_NAME='\h'
 fi
