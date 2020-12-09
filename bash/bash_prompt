@@ -1,9 +1,16 @@
+# Check for non-interactive shell
+if [ -z "$PS1" ]; then
+    return
+fi
+
+# Set TERM for colors
 if [[ $COLORTERM = gnome-*  && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
         export TERM='gnome-256color';
 elif infocmp xterm-256color >/dev/null 2>&1; then
         export TERM='xterm-256color';
 fi;
 
+# Git support in the Prompt
 prompt_git() {
         local s='';
         local branchName='';
@@ -54,6 +61,7 @@ prompt_git() {
         fi;
 }
 
+# Check for color support
 if tput setaf 1 &> /dev/null; then
         tput sgr0; # reset colors
         bold=$(tput bold);
